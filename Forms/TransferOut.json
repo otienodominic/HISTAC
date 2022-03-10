@@ -1,0 +1,178 @@
+{
+	"name": "Transfer Out Form",
+	"pages": [
+		{
+			"label": "Transfer Out",
+			"sections": [
+				{
+					"label": "Introduction",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"type": "markdown",
+							"questionOptions": {
+								"rendering": "markdown"
+							},
+							"id": "fooMarkdown",
+							"value": [
+								"**Use this form to:** Record a Transfer Out and to Verify an effective Transfer Out"
+							]
+						}
+					]
+				},
+				{
+					"label": "Transfer-Out Details",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Visit Date",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "date",
+								"concept": "163137AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+							},
+							"id": "dateOfVisit"
+						},
+						{
+							"label": "Receiving Facility",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "text",
+								"concept": "162724AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+							},
+							"id": "recievingHealthFacility"
+						},
+						{
+							"label": "Transfer-Out Date (Date transfer-out takes effect)",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "date",
+								"concept": "160649AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"weeksList": "",
+								"conceptMappings": [
+									{
+										"type": "CIEL",
+										"value": "160649"
+									}
+								]
+							},
+							"id": "transferOutDate"
+						}
+					]
+				},
+				{
+					"label": "Transfer-Out Verification",
+					"type": "obs",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Transfer-out Verified",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "radio",
+								"concept": "1246AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"answers": [
+									{
+										"label": "Yes",
+										"concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+									},
+									{
+										"label": "No",
+										"concept": "488b58ff-64f5-4f8a-8979-fa79940b1594"
+									},
+									{
+										"label": "Unknown",
+										"concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+									}
+								],
+								"conceptMappings": [
+									{
+										"type": "OCT",
+										"value": "StatusVerified"
+									},
+									{
+										"type": "SNOMED-CT",
+										"value": "416151008"
+									},
+									{
+										"type": "PIH",
+										"value": "1246"
+									},
+									{
+										"type": "SNOMED-MVP",
+										"value": "12461000105003"
+									}
+								]
+							},
+							"behaviours": [
+								{
+									"intent": "CT_TRANSFEROUT",
+									"required": "true",
+									"unspecified": "true",
+									"hide": {
+										"hideWhenExpression": "false"
+									},
+									"validators": []
+								}
+							],
+							"id": "isTransferOutVerified"
+						},
+						{
+							"label": "Date verification done",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "date",
+								"concept": "160753AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"weeksList": "",
+								"conceptMappings": [
+									{
+										"type": "CIEL",
+										"value": "160753"
+									},
+									{
+										"type": "CIEL",
+										"value": "160753"
+									},
+									{
+										"type": "SNOMED-CT",
+										"value": "439771001"
+									},
+									{
+										"type": "SNOMED-CT",
+										"value": "439771001"
+									}
+								]
+							},
+							"id": "verificationDate"
+						}
+					]
+				},
+				{
+					"label": "Notes",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Transfer-Out Notes",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "textarea",
+								"concept": "165095AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"rows": "",
+								"conceptMappings": [
+									{
+										"type": "CIEL",
+										"value": "165095"
+									}
+								]
+							},
+							"id": "transferOutNotes"
+						}
+					]
+				}
+			]
+		}
+	],
+	"processor": "EncounterFormProcessor",
+	"uuid": "xxxx",
+	"referencedForms": []
+}
