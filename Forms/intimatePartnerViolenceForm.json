@@ -1,0 +1,589 @@
+{
+	"name": "Intimate Partner Violence Form",
+	"pages": [
+		{
+			"label": "IPV Screening",
+			"sections": [
+				{
+                    "label": "Introduction",
+                    "sections": [
+                        {
+                            "label": "",
+                            "isExpanded": "true",
+                            "questions": [
+                                {
+                                    "type": "markdown",
+                                    "questionOptions": {
+                                        "rendering": "markdown"
+                                    },
+                                    "id": "fooMarkdown",
+                                    "value": [
+                                        "**Use this form to:** Assess Intimate partner Violence."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+				{
+					"label": "IPV Assessment",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Within the past year, has someone ever hit, kicked, slapped, or otherwise physically hurt you?",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "radio",
+								"concept": "2a228c6a-1575-43d7-9d42-9b68d0629f46",
+								"answers": [
+									{
+										"label": "Yes",
+										"concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+									},
+									{
+										"label": "No",
+										"concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+									}
+								]
+							},
+							"id": "everBeenAssaulted"
+						},
+						{
+							"label": "If Yes, by who?",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "checkbox",
+								"concept": "feba905e-d208-4124-8de9-58391fe88367",
+								"answers": [
+									{
+										"concept": "5617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Partner or spouse",
+										"conceptMappings": [
+											{
+												"type": "AMPATH",
+												"value": "5617"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "127848009"
+											},
+											{
+												"type": "CIEL",
+												"value": "5617"
+											}
+										]
+									},
+									{
+										"concept": "5620AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Other Family Member"
+										
+									},
+									{
+										"concept": "972AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Sibling",
+										"conceptMappings": [
+											{
+												"type": "CIEL",
+												"value": "972"
+											},
+											{
+												"type": "PIH",
+												"value": "2178"
+											},
+											{
+												"type": "AMPATH",
+												"value": "972"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "375005"
+											},
+											{
+												"type": "AMPATH",
+												"value": "972"
+											}
+										]
+									},
+									{
+										"concept": "974AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Uncle"
+										
+									},
+									{
+										"concept": "975AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Aunt"
+										
+									},
+									{
+										"concept": "1527AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Parent",
+										"conceptMappings": [
+											{
+												"type": "CIEL",
+												"value": "1527"
+											},
+											{
+												"type": "PIH",
+												"value": "2173"
+											},
+											{
+												"type": "AMPATH",
+												"value": "1672"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "40683002"
+											}
+										]
+										
+									},
+									{
+										"concept": "1528AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Child"
+										
+									},
+									{
+										"concept": "973AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Grandparent",
+										"conceptMappings": [
+											{
+												"type": "CIEL",
+												"value": "973"
+											},
+											{
+												"type": "AMPATH",
+												"value": "973"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "38312007"
+											}
+										]
+										
+									},
+									{
+										"concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Unknown Person",
+										"conceptMappings": [
+											{
+												"type": "CIEL",
+												"value": "1067"
+											},
+											{
+												"type": "AMPATH",
+												"value": "1067"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "261665006"
+											},
+											{
+												"type": "PIH",
+												"value": "1067"
+											}
+										]
+										
+									}
+								]
+							},
+							"behaviours": [
+								
+							],
+							"id": "byWho"
+						},
+						{
+							"label": "How often?",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "number",
+								"concept": "Number of occurrences",
+								"max": "1000",
+								"min": "0",
+								"showDate": "false"
+							},
+							"id": "howOften"
+						},
+                        {
+							"label": "Has someone ever threatened to hurt you?",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "radio",
+								"concept": "bd86f7ee-1d5f-4f5d-aa0f-4680aa6e65cb",
+								"answers": [
+									{
+										"label": "Yes",
+										"concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+									},
+									{
+										"label": "No",
+										"concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+									}
+								],
+								"conceptMappings": [
+									
+								]
+							},
+							"id": "everBeenThreatened"
+						},
+						{
+							"label": "If Yes, by who?",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "checkbox",
+								"concept": "feba905e-d208-4124-8de9-58391fe88367",
+								"answers": [
+									{
+										"concept": "5617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Partner or spouse",
+										"conceptMappings": [
+											{
+												"type": "AMPATH",
+												"value": "5617"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "127848009"
+											},
+											{
+												"type": "CIEL",
+												"value": "5617"
+											}
+										]
+									},
+									{
+										"concept": "5620AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Other Family Member"
+										
+									},
+									{
+										"concept": "972AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Sibling",
+										"conceptMappings": [
+											{
+												"type": "CIEL",
+												"value": "972"
+											},
+											{
+												"type": "PIH",
+												"value": "2178"
+											},
+											{
+												"type": "AMPATH",
+												"value": "972"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "375005"
+											},
+											{
+												"type": "AMPATH",
+												"value": "972"
+											}
+										]
+									},
+									{
+										"concept": "974AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Uncle"
+										
+									},
+									{
+										"concept": "975AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Aunt"
+										
+									},
+									{
+										"concept": "1527AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Parent",
+										"conceptMappings": [
+											{
+												"type": "CIEL",
+												"value": "1527"
+											},
+											{
+												"type": "PIH",
+												"value": "2173"
+											},
+											{
+												"type": "AMPATH",
+												"value": "1672"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "40683002"
+											}
+										]
+										
+									},
+									{
+										"concept": "1528AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Child"
+										
+									},
+									{
+										"concept": "973AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Grandparent",
+										"conceptMappings": [
+											{
+												"type": "CIEL",
+												"value": "973"
+											},
+											{
+												"type": "AMPATH",
+												"value": "973"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "38312007"
+											}
+										]
+										
+									},
+									{
+										"concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Unknown Person",
+										"conceptMappings": [
+											{
+												"type": "CIEL",
+												"value": "1067"
+											},
+											{
+												"type": "AMPATH",
+												"value": "1067"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "261665006"
+											},
+											{
+												"type": "PIH",
+												"value": "1067"
+											}
+										]
+										
+									}
+								]
+							},
+							"behaviours": [
+								
+							],
+							"id": "byWho"
+						},
+						{
+							"label": "How often?",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "number",
+								"concept": "Number of occurrences",
+								"max": "1000",
+								"min": "0",
+								"showDate": "false"
+							},
+							"id": "howOften"
+						},
+                        {
+							"label": "Has someone ever forced you to do something sexually that made you feel uncomfortable?",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "radio",
+								"concept": "1246AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"answers": [
+									{
+										"label": "Yes",
+										"concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+									},
+									{
+										"label": "No",
+										"concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+									}
+								],
+								"conceptMappings": [
+									
+								]
+							},
+							"id": "everForcedSexually"
+						},
+						{
+							"label": "By who?",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "checkbox",
+								"concept": "feba905e-d208-4124-8de9-58391fe88367",
+								"answers": [
+									{
+										"concept": "5617AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Partner or spouse",
+										"conceptMappings": [
+											{
+												"type": "AMPATH",
+												"value": "5617"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "127848009"
+											},
+											{
+												"type": "CIEL",
+												"value": "5617"
+											}
+										]
+									},
+									{
+										"concept": "5620AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Other Family Member"
+										
+									},
+									{
+										"concept": "972AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Sibling",
+										"conceptMappings": [
+											{
+												"type": "CIEL",
+												"value": "972"
+											},
+											{
+												"type": "PIH",
+												"value": "2178"
+											},
+											{
+												"type": "AMPATH",
+												"value": "972"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "375005"
+											},
+											{
+												"type": "AMPATH",
+												"value": "972"
+											}
+										]
+									},
+									{
+										"concept": "974AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Uncle"
+										
+									},
+									{
+										"concept": "975AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Aunt"
+										
+									},
+									{
+										"concept": "1527AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Parent",
+										"conceptMappings": [
+											{
+												"type": "CIEL",
+												"value": "1527"
+											},
+											{
+												"type": "PIH",
+												"value": "2173"
+											},
+											{
+												"type": "AMPATH",
+												"value": "1672"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "40683002"
+											}
+										]
+										
+									},
+									{
+										"concept": "1528AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Child"
+										
+									},
+									{
+										"concept": "973AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Grandparent",
+										"conceptMappings": [
+											{
+												"type": "CIEL",
+												"value": "973"
+											},
+											{
+												"type": "AMPATH",
+												"value": "973"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "38312007"
+											}
+										]
+										
+									},
+									{
+										"concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Unknown Person",
+										"conceptMappings": [
+											{
+												"type": "CIEL",
+												"value": "1067"
+											},
+											{
+												"type": "AMPATH",
+												"value": "1067"
+											},
+											{
+												"type": "SNOMED-CT",
+												"value": "261665006"
+											},
+											{
+												"type": "PIH",
+												"value": "1067"
+											}
+										]
+										
+									}
+								]
+							},
+							"behaviours": [
+								
+							],
+							"id": "byWho"
+						},
+						{
+							"label": "How often?",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "number",
+								"concept": "Number of occurrences",
+								"max": "1000",
+								"min": "0",
+								"showDate": "false"
+							},
+							"id": "howOften"
+						},
+						{
+							"label": "Notes",
+							"sections": [
+								{
+									"label": "Comments",
+									"isExpanded": "true",
+									"questions": [
+										{
+											"label": "Enter comments",
+											"type": "obs",
+											"questionOptions": {
+												"rendering": "textarea",
+												"concept": "165095AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+												"rows": ""
+											},
+											"id": "Note"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"processor": "EncounterFormProcessor",
+	"uuid": "xxxx",
+	"referencedForms": []
+}
